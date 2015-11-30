@@ -1,9 +1,10 @@
-package com.univ.alma.csa.composantSimple;
+package com.univ.alma.metaModel.composantSimple;
 
 public class PortComposantSimpleFourni extends PortComposantSimple {
 
 	public PortComposantSimpleFourni(String nom) {
 		this.nom = nom;
-		System.out.println("Prot Composant Simple Fourni " + nom);
+		System.out.println("Port Composant Simple Fourni " + nom);
 	}
+	
 }

@@ -1,4 +1,4 @@
-package com.univ.alma.csa.composantSimple;
+package com.univ.alma.metaModel.composantSimple;
 
 public abstract class PortComposantSimple {
 	
