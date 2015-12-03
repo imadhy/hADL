@@ -1,11 +1,13 @@
 package com.univ.alma.metaModel.composantSimple;
 
-public class ServiceComposantSimple {
+import java.util.Observable;
 
-    private String nom;
+public class ServiceComposantSimple extends Observable {
+
+    protected String nom;
 
     public ServiceComposantSimple () {
-        System.out.println("Creation Service " + this.nom);
+        System.out.println("Creation Service Composant Simple" + this.nom);
     }
 
     public String getNom() {

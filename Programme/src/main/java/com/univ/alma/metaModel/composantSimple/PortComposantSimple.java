@@ -1,6 +1,8 @@
 package com.univ.alma.metaModel.composantSimple;
 
-public abstract class PortComposantSimple {
+import java.util.Observable;
+
+public abstract class PortComposantSimple extends Observable {
 	
 	public enum PortType {
 		SYNCHRONE,
