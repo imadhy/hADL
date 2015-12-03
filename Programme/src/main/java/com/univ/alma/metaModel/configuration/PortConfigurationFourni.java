@@ -9,4 +9,9 @@ public class PortConfigurationFourni {
 		this.nom = nom;
 		System.out.println("Prot Configuration Fourni " + nom);
 	}
+
+	public String getNom() {
+		return this.nom;
+	}
+
 }

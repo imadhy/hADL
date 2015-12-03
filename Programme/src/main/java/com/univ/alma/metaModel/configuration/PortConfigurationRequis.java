@@ -9,4 +9,8 @@ public class PortConfigurationRequis {
 		this.nom = nom;
 		System.out.println("Prot Configuration Requis " + nom);
 	}
+
+	public String getNom() {
+		return this.nom;
+	}
 }
