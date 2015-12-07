@@ -1,6 +1,8 @@
 package com.univ.alma.metaModel.connecteurSimple;
 
-public abstract class Role {
+import java.util.Observable;
+
+public abstract class Role  extends Observable{
 
 	protected String nom;
 
