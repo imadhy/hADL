@@ -8,7 +8,7 @@ import java.util.Observer;
 /**
  * Created by imadhy on 03/12/15.
  */
-public abstract class AttachmentFournis implements Observer {
+public class AttachmentFournis {
     private PortComposantSimpleFourni portComSimpFourni;
     private RoleFourni roleFourni;
 

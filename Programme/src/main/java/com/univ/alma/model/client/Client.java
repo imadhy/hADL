@@ -7,10 +7,10 @@ import com.univ.alma.metaModel.composantSimple.ComposantSimple;
  */
 public class Client extends ComposantSimple {
 
-
     public Client(String name) {
         super(name);
 
 
     }
+
 }

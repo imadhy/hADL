@@ -3,6 +3,7 @@ package com.univ.alma.model.serveur;
 import com.univ.alma.metaModel.composantSimple.InterfaceComposantSimple;
 import com.univ.alma.metaModel.composantSimple.PortComposantSimple;
 import com.univ.alma.metaModel.composantSimple.ServiceComposantSimple;
+import com.univ.alma.metaModel.composantSimple.ServiceComposantSimpleRequis;
 import com.univ.alma.metaModel.core.Interface;
 
 /**
@@ -10,12 +11,12 @@ import com.univ.alma.metaModel.core.Interface;
  */
 public class InterfaceServeur extends InterfaceComposantSimple {
 
-    private ServiceComposantSimple serveurServices;
+    private ServiceComposantSimpleRequis serveurServices;
     private PortComposantSimple portReceiveServeur;
 
     public InterfaceServeur(String nom) {
         serveurServices = new ServeurServices("Services du Serveur");
-        portReceiveServeur = new PortReceiveRequest("Port receive request");
+        portReceiveServeur = new PortReceiveRequest("Port receive request", serveurServices);
 
         this.addPortComposantSimple(portReceiveServeur);
         this.addServiceComposantSimple(serveurServices);

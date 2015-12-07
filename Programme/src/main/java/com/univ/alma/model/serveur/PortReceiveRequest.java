@@ -1,15 +1,16 @@
 package com.univ.alma.model.serveur;
 
-import com.univ.alma.metaModel.composantSimple.PortComposantSimple;
+import com.univ.alma.metaModel.composantSimple.PortComposantSimpleRequis;
+import com.univ.alma.metaModel.composantSimple.ServiceComposantSimpleRequis;
 
 /**
  * Created by imadhy on 07/12/15.
  */
-public class PortReceiveRequest extends PortComposantSimple{
+public class PortReceiveRequest extends PortComposantSimpleRequis {
 
-    public PortReceiveRequest(String nom) {
-        this.setNom(nom);
+    public PortReceiveRequest(String nom, ServiceComposantSimpleRequis S) {
+        super(nom, S);
 
-        System.out.println("Creation Port receive request " + nom);
+        System.out.println("Creation Port receive request " + nom + "avec le service requis " + S.getNom());
     }
 }
