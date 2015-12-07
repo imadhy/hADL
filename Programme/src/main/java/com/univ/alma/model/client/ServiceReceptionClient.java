@@ -8,6 +8,7 @@ import java.util.Observer;
 /**
  * Created by imadhy on 03/12/15.
  */
+
 public class ServiceReceptionClient extends ServiceComposantSimpleRequis implements Observer{
 
     private PortReceptionClient portReceptionClient;
