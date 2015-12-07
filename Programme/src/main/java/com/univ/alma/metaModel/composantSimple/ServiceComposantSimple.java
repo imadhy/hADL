@@ -6,8 +6,9 @@ public class ServiceComposantSimple extends Observable {
 
     protected String nom;
 
-    public ServiceComposantSimple () {
-        System.out.println("Creation Service Composant Simple" + this.nom);
+    public ServiceComposantSimple (String nomService) {
+        this.nom = nomService;
+        System.out.println("Creation Service Composant Simple" + nom);
     }
 
     public String getNom() {

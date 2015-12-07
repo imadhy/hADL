@@ -16,11 +16,11 @@ public class RPC extends ConnecteurSimple{
 		this.roleEnvoiServeur = new RoleEnvoiServeur("RoleEnvoiServeur");
 		this.roleReceptionClient = new RoleReceptionClient("RoleReceptionClient");
 		this.roleReceptionServeur = new RoleReceptionServeur("RoleReceptionServeur");
-		
-		//this.addInterfaceConnecteurSimple(roleEnvoiClient);
-		//this.addInterfaceConnecteurSimple(roleEnvoiServeur);
-		//this.addInterfaceConnecteurSimple(roleReceptionClient);
-		//this.addInterfaceConnecteurSimple(roleReceptionServeur);
+
+		this.addRole(this.roleEnvoiClient);
+		this.addRole(this.roleEnvoiServeur);
+		this.addRole(this.roleReceptionClient);
+		this.addRole(this.roleReceptionServeur);
 		
 	}
 
