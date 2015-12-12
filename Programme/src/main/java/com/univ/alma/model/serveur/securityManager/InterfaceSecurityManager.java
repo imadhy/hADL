@@ -17,7 +17,7 @@ public class InterfaceSecurityManager extends InterfaceComposantSimple {
         portSecuAuth = new PortSecurityAuth("Security Authentification");
         portCheckQuery = new PortCheckQuery("Check Query");
 
-        System.out.println("Creation Interface Security Manager " + nom);
+        System.out.println("Creation Interface : " + nom);
         this.addServiceComposantSimple(servicesSecuManager);
         this.addPortComposantSimple(portSecuAuth);
         this.addPortComposantSimple(portCheckQuery);

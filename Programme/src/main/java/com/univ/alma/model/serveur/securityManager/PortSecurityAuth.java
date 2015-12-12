@@ -7,6 +7,6 @@ import com.univ.alma.metaModel.composantSimple.PortComposantSimple;
  */
 public class PortSecurityAuth extends PortComposantSimple {
     public PortSecurityAuth(String nom) {
-        System.out.println("Creation Port Security Authentification" + nom);
+        System.out.println("Creation Port : " + nom);
     }
 }

@@ -21,6 +21,6 @@ public class InterfaceServeur extends InterfaceComposantSimple {
         this.addPortComposantSimple(portReceiveServeur);
         this.addServiceComposantSimple(serveurServices);
 
-        System.out.println("Creation Interface Serveur " + nom);
+        System.out.println("Creation Interface Serveur : " + nom);
     }
 }

@@ -9,6 +9,6 @@ public class ServiceConnectionManager extends ServiceComposantSimple {
     public ServiceConnectionManager(String nom) {
         super(nom);
 
-        System.out.println("Creation Services Connection Manager " + nom);
+        System.out.println("Creation Services : " + nom);
     }
 }

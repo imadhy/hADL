@@ -18,6 +18,6 @@ public class InterfaceClient extends InterfaceComposantSimple {
         this.addPortComposantSimple(portCSF);
         this.addServiceComposantSimple(serviceCSF);
 
-        System.out.println("Creation Interface Serveur " + nom);
+        System.out.println("Creation de l'Interface Client : " + nom);
     }
 }

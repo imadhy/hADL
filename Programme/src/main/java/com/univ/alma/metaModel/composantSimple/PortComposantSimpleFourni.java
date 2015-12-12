@@ -2,12 +2,10 @@ package com.univ.alma.metaModel.composantSimple;
 
 public class PortComposantSimpleFourni extends PortComposantSimple {
 
-	private ServiceComposantSimpleFourni serviceCSF;
+   public void send(Object message){
+        System.out.println("Send | PortComposantSimpleFourni: " + this.getClass().getSimpleName() + " | message = " + message);
 
-	public PortComposantSimpleFourni(String nom, ServiceComposantSimpleFourni service) {
-		this.nom = nom;
-		this.serviceCSF = service;
-		System.out.println("Port Composant Simple Fourni " + nom);
-	}
-	
+        this.setChanged();
+        this.notifyObservers(message);
+    }
 }

@@ -15,7 +15,7 @@ public class DataBase extends ComposantSimple {
         super(nom);
 
         interfaceDB = new InterfaceDataBase("Data-Base");
-        System.out.println("Creation Composant Simple : " + nom);
+        System.out.println("Creation du Composant Simple : " + nom);
         this.addInterfaceComposantSimple(interfaceDB);
     }
 }

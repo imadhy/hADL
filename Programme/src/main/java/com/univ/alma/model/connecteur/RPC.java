@@ -4,43 +4,25 @@ package com.univ.alma.model.connecteur;
 import com.univ.alma.metaModel.connecteurSimple.ConnecteurSimple;
 
 public class RPC extends ConnecteurSimple{
-	private RoleEnvoiClient roleEnvoiClient;
-	private RoleEnvoiServeur roleEnvoiServeur;
-	private RoleReceptionClient roleReceptionClient;
-	private RoleReceptionServeur roleReceptionServeur;
+	private RPCCaller RPCCaller;
+	private RPCCalled RPCCalled;
 	
 	public RPC(String nom) {
 		super(nom);
 		
-		this.roleEnvoiClient = new RoleEnvoiClient("RoleEnvoiClient");
-		this.roleEnvoiServeur = new RoleEnvoiServeur("RoleEnvoiServeur");
-		this.roleReceptionClient = new RoleReceptionClient("RoleReceptionClient");
-		this.roleReceptionServeur = new RoleReceptionServeur("RoleReceptionServeur");
+		this.RPCCaller = new RPCCaller("RPCCaller");
+		this.RPCCalled = new RPCCalled("RPCCalled");
 
-		this.addRole(this.roleEnvoiClient);
-		this.addRole(this.roleEnvoiServeur);
-		this.addRole(this.roleReceptionClient);
-		this.addRole(this.roleReceptionServeur);
+		this.addRole(this.RPCCaller);
+		this.addRole(this.RPCCalled);
 		
 	}
 
-	public RoleEnvoiClient getRoleEnvoiClient() {
-		return roleEnvoiClient;
+	public RPCCaller getRPCCaller() {
+		return RPCCaller;
 	}
 
-	public RoleEnvoiServeur getRoleEnvoiServeur() {
-		return roleEnvoiServeur;
+	public RPCCalled getRPCCalled() {
+		return RPCCalled;
 	}
-
-	public RoleReceptionClient getRoleReceptionClient() {
-		return roleReceptionClient;
-	}
-
-	public RoleReceptionServeur getRoleReceptionServeur() {
-		return roleReceptionServeur;
-	}
-	
-	
-
-
 }

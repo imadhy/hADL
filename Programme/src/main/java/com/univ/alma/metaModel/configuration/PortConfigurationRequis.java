@@ -1,16 +1,10 @@
 package com.univ.alma.metaModel.configuration;
 
-public class PortConfigurationRequis {
-	
-	private String nom;
-	
-	public PortConfigurationRequis(String nom) {
-	
-		this.nom = nom;
-		System.out.println("Prot Configuration Requis " + nom);
-	}
+public class PortConfigurationRequis extends PortConfiguration {
 
-	public String getNom() {
-		return this.nom;
+	public void send(Object message){
+		System.out.println("\nSend | PortConfigurationRequis: " + this.getClass().getSimpleName() + " | message = " + message);
+		this.setChanged();
+		this.notifyObservers(message);
 	}
 }

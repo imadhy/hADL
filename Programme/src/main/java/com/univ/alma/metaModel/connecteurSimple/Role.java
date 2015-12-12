@@ -1,16 +1,17 @@
 package com.univ.alma.metaModel.connecteurSimple;
 
+import com.univ.alma.metaModel.core.Interface;
+
 import java.util.Observable;
 
-public abstract class Role  extends Observable{
+public abstract class Role extends Observable implements Interface {
 
-	protected String nom;
+    public void send(Object message){
 
-    public void setNom(String nom) {
-        this.nom = nom;
+        System.out.println("\nSend | Role: " + this.getClass().getSimpleName() + " | message = " + message);
+
+        this.setChanged();
+        this.notifyObservers(message);
     }
 
-    public String getNom() {
-        return this.nom;
-    }
 }

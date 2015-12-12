@@ -3,10 +3,11 @@ package com.univ.alma.model.connecteur;
 import java.util.Observable;
 
 import com.univ.alma.metaModel.connecteurSimple.RoleFourni;
+import com.univ.alma.metaModel.connecteurSimple.RoleRequis;
 
-public class RoleReceptionServeur extends RoleFourni{
+public class RPCCalled extends RoleRequis{
 	
-	public RoleReceptionServeur(String nom) {
+	public RPCCalled(String nom) {
 		super(nom);
 	}
 	

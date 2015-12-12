@@ -15,7 +15,7 @@ public class ConnexionManager extends ComposantSimple {
         super(nom);
 
         interfaceCM = new InterfaceConnectionManager("Connextion Manager");
-        System.out.println("Creation Connexion Manager" + nom);
+        System.out.println("Creation Composant Simple : " + nom);
         this.addInterfaceComposantSimple(interfaceCM);
     }
 }

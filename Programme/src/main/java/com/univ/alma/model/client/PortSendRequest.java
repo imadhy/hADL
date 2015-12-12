@@ -10,6 +10,5 @@ public class PortSendRequest extends PortComposantSimpleFourni {
 
     public PortSendRequest(String nom, ServiceComposantSimpleFourni S) {
         super(nom, S);
-        System.out.println("Creation du Port " + nom + "avec le service fournis " + S.getNom());
     }
 }

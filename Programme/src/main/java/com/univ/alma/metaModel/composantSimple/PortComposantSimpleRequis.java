@@ -2,11 +2,10 @@ package com.univ.alma.metaModel.composantSimple;
 
 public class PortComposantSimpleRequis extends PortComposantSimple {
 
-	private ServiceComposantSimpleRequis serviceCSR;
+	public void send(Object message){
+		System.out.println("Send | PortComposantSimpleRequis: " + this.getClass().getSimpleName() + " | message = " + message);
 
-	public PortComposantSimpleRequis(String nom, ServiceComposantSimpleRequis service) {
-		this.nom = nom;
-        this.serviceCSR = service;
-		System.out.println("Port Composant Simple Requis " + nom);
+		this.setChanged();
+		this.notifyObservers(message);
 	}
 }

@@ -1,10 +1,11 @@
 package com.univ.alma.model.connecteur;
 
+import com.univ.alma.metaModel.connecteurSimple.RoleFourni;
 import com.univ.alma.metaModel.connecteurSimple.RoleRequis;
 
-public class RoleEnvoiClient extends RoleRequis{
+public class RPCCaller extends RoleFourni{
 	
-	public RoleEnvoiClient( String nom) {
+	public RPCCaller(String nom) {
 		super(nom);
 	}
 	

@@ -1,21 +1,36 @@
 package com.univ.alma.metaModel.composantSimple;
 
-import java.util.Observable;
+import java.util.ArrayList;
+import java.util.List;
 
-public class ServiceComposantSimple extends Observable {
+public abstract class ServiceComposantSimple {
 
-    protected String nom;
+    private List<PortComposantSimpleRequis> portsRequis;
+    private List<PortComposantSimpleFourni> portsFournis;
 
-    public ServiceComposantSimple (String nomService) {
-        this.nom = nomService;
-        System.out.println("Creation Service Composant Simple" + nom);
+    public ServiceComposantSimple(){
+        this.portsRequis = new ArrayList<PortComposantSimpleRequis>();
+        this.portsFournis = new ArrayList<PortComposantSimpleFourni>();
     }
 
-    public String getNom() {
-        return this.nom;
+    public void addPortRequis(PortComposantSimpleRequis port){
+        this.portsRequis.add(port);
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void addPortFourni(PortComposantSimpleFourni port){
+        this.portsFournis.add(port);
+    }
+
+    public Object update(Object params) {
+        System.out.println("\nProccessing | Service: " + this.getClass().getSimpleName() + " | message = " + params);
+        return "";
+    }
+
+    public List<PortComposantSimpleRequis> getPortsRequis(){
+        return this.portsRequis;
+    }
+
+    public List<PortComposantSimpleFourni> getPortsFournis(){
+        return this.portsFournis;
     }
 }

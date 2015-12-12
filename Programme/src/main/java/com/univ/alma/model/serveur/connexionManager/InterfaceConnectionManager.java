@@ -19,7 +19,7 @@ public class InterfaceConnectionManager extends InterfaceComposantSimple {
         portSecurityCheck = new PortSecurityCheck("Security Check");
         portExternalSocket = new PortExternalSocket("External Socket");
 
-        System.out.println("Creation Interface Connection Manager " + nom);
+        System.out.println("Creation Interface : " + nom);
         this.addServiceComposantSimple(serviceConnectionManager);
         this.addPortComposantSimple(portDBQuery);
         this.addPortComposantSimple(portSecurityCheck);

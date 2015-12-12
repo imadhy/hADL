@@ -7,6 +7,6 @@ import com.univ.alma.metaModel.composantSimple.PortComposantSimple;
  */
 public class PortSecurityCheck extends PortComposantSimple {
     public PortSecurityCheck(String nom) {
-        System.out.println("Creation Port Security Check " + nom);
+        System.out.println("Creation Port : " + nom);
     }
 }

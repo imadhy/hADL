@@ -9,6 +9,6 @@ public class ServicesSecurityManager extends ServiceComposantSimple {
     public ServicesSecurityManager(String nom) {
         super(nom);
 
-        System.out.println("Creation Services Security Manager " + nom);
+        System.out.println("Creation Services : " + nom);
     }
 }

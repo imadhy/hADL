@@ -15,6 +15,6 @@ public class ServeurComposant extends Composant {
         interfaceServeur = new InterfaceServeur("Interface serveur");
 
         this.addInterfaceComposantSimple(interfaceServeur);
-        System.out.println("Creation Serveur Composant " + nom);
+        System.out.println("Creation Serveur Composant : " + nom);
     }
 }

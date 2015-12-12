@@ -7,6 +7,6 @@ import com.univ.alma.metaModel.composantSimple.PortComposantSimple;
  */
 public class PortQuery extends PortComposantSimple {
     public PortQuery(String nom) {
-        System.out.println("Creation Port Query " + nom);
+        System.out.println("Creation du Port : " + nom);
     }
 }

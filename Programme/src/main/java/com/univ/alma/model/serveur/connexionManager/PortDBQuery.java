@@ -8,6 +8,6 @@ import com.univ.alma.metaModel.composantSimple.PortComposantSimple;
  */
 public class PortDBQuery extends PortComposantSimple {
     public PortDBQuery(String nom) {
-        System.out.println("Creation DataBase Query " + nom);
+        System.out.println("Creation Port : " + nom);
     }
 }

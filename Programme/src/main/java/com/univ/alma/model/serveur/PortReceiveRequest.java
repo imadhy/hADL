@@ -11,6 +11,5 @@ public class PortReceiveRequest extends PortComposantSimpleRequis {
     public PortReceiveRequest(String nom, ServiceComposantSimpleRequis S) {
         super(nom, S);
 
-        System.out.println("Creation Port receive request " + nom + "avec le service requis " + S.getNom());
     }
 }

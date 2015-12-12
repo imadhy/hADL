@@ -1,29 +1,29 @@
 package com.univ.alma.metaModel.core;
 
 import com.univ.alma.metaModel.composantSimple.PortComposantSimpleRequis;
-import com.univ.alma.metaModel.connecteurSimple.RoleRequis;
+import com.univ.alma.metaModel.configuration.PortConfigurationRequis;
+import com.univ.alma.metaModel.connecteurSimple.RoleFourni;
 
+import java.util.Observable;
 import java.util.Observer;
 
 /**
  * Created by imadhy on 03/12/15.
  */
-public abstract class AttachmentRequis implements Observer {
-    private PortComposantSimpleRequis portComSimpRequis;
-    private RoleRequis roleRequis;
 
-    public AttachmentRequis(PortComposantSimpleRequis PCSR, RoleRequis RR) {
-        this.portComSimpRequis = PCSR;
-        this.roleRequis = RR;
-
-        System.out.println("Attachment entre " + this.portComSimpRequis.getNom() + " ===> " + this.roleRequis.getNom());
+public  class AttachmentRequis extends Attachment {
+    public AttachmentRequis(PortComposantSimpleRequis portRequis, RoleFourni roleFourni) {
+        super(portRequis, roleFourni);
+        portRequis.addObserver(this);
     }
 
-    public PortComposantSimpleRequis getPortComSimpRequis() {
-        return this.portComSimpRequis;
+    public AttachmentRequis(PortConfigurationRequis portRequis, RoleFourni roleFourni) {
+        super(portRequis, roleFourni);
+        portRequis.addObserver(this);
     }
 
-    public RoleRequis getRoleRequis() {
-        return this.roleRequis;
+    public void update(Observable obs, Object message) {
+        System.out.println("\nUpdate | AttachementRequis: " + this.getClass().getSimpleName() + " | message = " + message);
+        super.role.send(message);
     }
 }

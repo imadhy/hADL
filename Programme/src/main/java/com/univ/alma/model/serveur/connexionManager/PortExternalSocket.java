@@ -7,6 +7,6 @@ import com.univ.alma.metaModel.composantSimple.PortComposantSimple;
  */
 public class PortExternalSocket extends PortComposantSimple {
     public PortExternalSocket(String nom) {
-        System.out.println("Creation Port External Socket " + nom);
+        System.out.println("Creation Port : " + nom);
     }
 }

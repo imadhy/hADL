@@ -9,6 +9,6 @@ public class ServiceClient extends ServiceComposantSimpleFourni {
     public ServiceClient(String nom) {
         super(nom);
 
-        System.out.println("Creation du Service " + nom);
+        //System.out.println("Creation du Service " + nom);
     }
 }
